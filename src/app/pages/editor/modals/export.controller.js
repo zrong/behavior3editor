@@ -52,6 +52,9 @@
       else if (vm.type === 'nodes' && vm.format === 'json') {
         _createJson(e.nodesToData());
       }
+      else if (vm.type === 'lighttree' && vm.format === 'json') {
+        _createJson(e.exportLightTree());
+      }
     }
 
     function _createJson(data) {
